@@ -31,9 +31,9 @@ function weather() {
   weather();
 
   function getWeather(latitude, longitude){
-    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+    let apiKey = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
     
- fetch(api)
+ fetch(apiKey)
         .then(function(response){
             let data = response.json();
             return data;
